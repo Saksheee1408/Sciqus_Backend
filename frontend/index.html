@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Management Test UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>🎓 Student Management System</h1>
+
+<div class="container">
+    <h2>All Students</h2>
+    <button id="loadStudents">Load Students</button>
+    <table id="studentsTable">
+        <thead>
+        <tr>
+            <th>ID</th><th>Name</th><th>Email</th><th>Phone</th><th>Course</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <h2>Add New Course</h2>
+    <input type="text" id="courseName" placeholder="Course Name" />
+    <input type="text" id="courseCode" placeholder="Course Code" />
+    <input type="number" id="courseDuration" placeholder="Duration (months)" />
+    <button id="addCourse">Add Course</button>
+    <p id="courseMessage"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
