@@ -11,10 +11,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class FirebaseAuthService {
 
-    /**
-     * Verify Firebase ID token
-     * Returns Firebase UID if token is valid
-     */
+    
     public String verifyToken(String idToken) {
         try {
             FirebaseToken decodedToken = FirebaseAuth.getInstance().verifyIdToken(idToken);
@@ -24,9 +21,7 @@ public class FirebaseAuthService {
         }
     }
 
-    /**
-     * Get user email from token
-     */
+    
     public String getEmailFromToken(String idToken) {
         try {
             FirebaseToken decodedToken = FirebaseAuth.getInstance().verifyIdToken(idToken);
